@@ -7,7 +7,11 @@
 }
 
 a{
-    color: black;
+    text-decoration: none;
+}
+
+.primarycolor{
+    color: var(--color-primary);
 }
 
 .bg-myprimary{
@@ -16,6 +20,11 @@ a{
 
 .bg-tertiary{
     background-color: var(--color-tertiary);
+    color: white;
+}
+
+.bg-quaternary{
+    background-color: var(--color-quaternary);
     color: white;
 }
 
@@ -39,7 +48,7 @@ a{
 
 .jumboimg{
     aspect-ratio: 1;
-    max-width: 15%;
+    max-width: 300px;
 }
 
 .jumboimg img{
@@ -76,4 +85,36 @@ a{
 
 .portfolio{
     color: var(--color-text);
+}
+
+.about{
+    color: white;
+}
+
+.contact .spacer{
+    background-color: #333333;
+}
+
+.form-controller {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.socialicons i{
+    border: solid 2px;
+    padding: 1rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
