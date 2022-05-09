@@ -17,20 +17,25 @@
 
 	<header>
 		<!-- NAVBAR -->
-		<nav class="navbar bg-tertiary align-items-center py-4">
+		<nav class="navbar navbar-expand-lg navbar-light bg-tertiary py-3">
 			<div class="container">
-				<h3>START BOOTSTRAP</h3>
-				<ul>
-					<a href="">
-						<li>PORTFOLIO</li>
-					</a>
-					<a href="">
-						<li>ABOUT</li>
-					</a>
-					<a href="">
-						<li>CONTACT</li>
-					</a>
-				</ul>
+				<a class="navbar-brand" href="#"><h3 class="colorwhite">START BOOTSTRAP</h3></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-end" id="navbarText">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end colorwhite">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#portfolio">PORTFOLIO</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">ABOUT</a>
+						</li>
+						<li class="nav-item text-end">
+							<a class="nav-link" href="#contact">CONTACT</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -51,7 +56,7 @@
 		<!-- FINE JUMBOTRON -->
 
 		<!-- INIZIO SEZIONE PORTFOLIO -->
-		<div class="portfolio container-fluid pt-5">
+		<div class="portfolio container-fluid pt-5" id="portfolio">
 			<div class="d-flex flex-column align-items-center">
 				<h2>PORTFOLIO</h2>
 				<div class="d-flex starspacer pb-4">
@@ -101,7 +106,7 @@
 
 		<!-- INIZIO SEZIONE ABOUT -->
 
-		<div class="about container-fluid bg-myprimary pt-5">
+		<div class="about container-fluid bg-myprimary pt-5" id="about">
 			<div class="d-flex flex-column align-items-center">
 				<h2>ABOUT</h2>
 				<div class="d-flex starspacer pb-4">
@@ -110,7 +115,7 @@
 					<div class="spacer"></div>
 				</div>
 				<div class="container pb-4">
-					<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center px-5">
 						<div class="col fw-bold">Freelancer is a free bootstrap theme created
 							by Start Bootstrap. The download includes the complete source files
 							including HTML, CSS, and JavaScript as well as optional LESS stylesheets
@@ -129,7 +134,7 @@
 		<!-- FINE SEZIONE ABOUT -->
 
 		<!-- INIZIO SEZIONE CONTACT -->
-		<div class="contact container py-5">
+		<div class="contact container py-5 px-5" id="contact">
 			<div class="d-flex flex-column align-items-center">
 				<h2>CONTACT ME</h2>
 				<div class="d-flex starspacer pb-4">
@@ -150,7 +155,7 @@
 					<input class="form-controller" placeholder="Phone Number">
 				</div>
 				<div class="mb-3">
-					<textarea class="form-controller" rows="3" placeholder="Message"></textarea>
+					<textarea class="form-controller" rows="8" placeholder="Message"></textarea>
 				</div>
 			</div>
 			<div><button type="button" class="btn btn-success">Send</button></div>
@@ -160,7 +165,7 @@
 	<footer>
 		<div class="container-fluid bg-quaternary py-5">
 			<div class="container">
-				<div class="row row-cols-1 row-cols-md-3 text-center fw-bold">
+				<div class="row row-cols-1 row-cols-md-3 text-center fw-bold g-4">
 					<div class="col">
 						<h3>LOCATION</h3>
 						<div>2215 John Daniel Drive Clark, MO</div>
@@ -168,7 +173,8 @@
 					</div>
 					<div class="col">
 						<h3>AROUND THE WEB</h3>
-						<div class="socialicons"><i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i> </div>
+						<div class="socialicons"><i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-google-plus-g"></i>
+							<i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i> </div>
 					</div>
 					<div class="col">
 						<h3>ABOUT FREELANCER</h3>
